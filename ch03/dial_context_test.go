@@ -10,7 +10,11 @@ import (
 )
 
 func TestDialContext(t *testing.T) {
+<<<<<<< HEAD
 	dl := time.Now().Add(2 * time.Second)
+=======
+	dl := time.Now().Add(3 * time.Second)
+>>>>>>> origin/udp
 	ctx, cancel := context.WithDeadline(context.Background(), dl)
 	defer cancel()
 

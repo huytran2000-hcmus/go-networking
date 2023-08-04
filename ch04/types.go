@@ -12,7 +12,7 @@ const (
 	BinaryType uint8 = iota + 1
 	StringType
 
-	MaxPayloadSize uint32 = 10 << 20
+	MaxPayloadSize uint32 = 1 << 20
 )
 
 var (

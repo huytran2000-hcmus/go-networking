@@ -65,7 +65,7 @@ func TestMaxPayloadSize(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	err = binary.Write(&buf, binary.BigEndian, uint32(1<<10))
+	err = binary.Write(&buf, binary.BigEndian, uint32(1<<20)+1)
 	if err != nil {
 		t.Fatal(err)
 	}
